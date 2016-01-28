@@ -10,15 +10,15 @@ public class LiberiProfessionistiTest {
 
 	@Test
 	public void test() {
-		LiberiProfessionisti lp=new LiberiProfessionisti();
-		
+		LiberiProfessionisti lp = new LiberiProfessionisti();
+
 		lp.setCognome("cognome lp");
 		lp.setNome("nome lp");
 		lp.setCf("dsaadaslp");
 		lp.setNfatture(10);
-		
-		assertEquals(500,lp.parcella());
-		
+
+		assertEquals(55.0, lp.parcella(), 0.001);
+
 	}
 
 }

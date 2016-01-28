@@ -1,49 +1,28 @@
 package vasyl.polimorfismo.main;
 
-public class Dipendenti {
-	
-	//Nome, Cognome e CF.
+public class Dipendenti extends Clienti {
 
-	private String nome;
-	private String cognome;
-	private String cf;
-			
-	public Dipendenti(){
+	// Nome, Cognome e CF.
+	double parcellaFissa;
+	
+	public Dipendenti() {
 		
+		this.setParcellaFissa(50);
+
 	}
+
+	public double getParcellaFissa() {
+		return parcellaFissa;
+	}
+
+	public void setParcellaFissa(double parcellaFissa) {
+		this.parcellaFissa = parcellaFissa;
+	}
+
 	
-	public Dipendenti(String nome,String cognome,String cf){
-		this.nome=nome;
-		this.cognome=cognome;
-		this.cf=cf;
-	}
 
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public String getCognome() {
-		return cognome;
-	}
-
-	public void setCognome(String cognome) {
-		this.cognome = cognome;
-	}
-
-	public String getCf() {
-		return cf;
-	}
-
-	public void setCf(String cf) {
-		this.cf = cf;
-	}
-	
-	public int parcella(){
-		return 50;
+	public double parcella() {
+		return getParcellaFissa();
 	}
 
 }
